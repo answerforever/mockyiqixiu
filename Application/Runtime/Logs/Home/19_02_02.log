@@ -1,0 +1,93 @@
+[ 2019-02-02T14:36:53+08:00 ] 127.0.0.1 /assets/admin/logo.png
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-02T14:37:35+08:00 ] 127.0.0.1 /assets/admin/logo.png
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-02T14:37:37+08:00 ] 127.0.0.1 /%7B%7BPREFIX_FILE_HOST%20+%20home.image.imgSrc%7D%7D
+ERR: 无法加载控制器:{{PREFIX_FILE_HOST + home.image.imgSrc}}
+
+[ 2019-02-02T14:38:21+08:00 ] 127.0.0.1 /%7B%7BfileDomain%20+%20exemplar.cover%7D%7D
+ERR: 无法加载控制器:{{fileDomain + exemplar.cover}}
+
+[ 2019-02-02T14:38:21+08:00 ] 127.0.0.1 /%7B%7Bavatar%7D%7D
+ERR: 无法加载控制器:{{avatar}}
+
+[ 2019-02-02T14:38:37+08:00 ] 127.0.0.1 /m/scene/tpl/scene/recommendTag/list?time=1549089517708
+ERR: 无法加载控制器:M
+
+[ 2019-02-02T14:38:37+08:00 ] 127.0.0.1 /%7B%7Bavatar%7D%7D
+ERR: 无法加载控制器:{{avatar}}
+
+[ 2019-02-02T14:38:37+08:00 ] 127.0.0.1 /%7B%7BfileDomain%20+%20exemplar.cover%7D%7D
+ERR: 无法加载控制器:{{fileDomain + exemplar.cover}}
+
+[ 2019-02-02T14:39:11+08:00 ] 127.0.0.1 /assets/images/create/effect_bg.jpg
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-02T14:39:25+08:00 ] 127.0.0.1 /%7B%7Bavatar%7D%7D
+ERR: 无法加载控制器:{{avatar}}
+
+[ 2019-02-02T14:39:25+08:00 ] 127.0.0.1 /%7B%7BfileDomain%20+%20exemplar.cover%7D%7D
+ERR: 无法加载控制器:{{fileDomain + exemplar.cover}}
+
+[ 2019-02-02T14:39:37+08:00 ] 127.0.0.1 /%7B%7Bavatar%7D%7D
+ERR: 无法加载控制器:{{avatar}}
+
+[ 2019-02-02T14:39:38+08:00 ] 127.0.0.1 /%7B%7BfileDomain%20+%20exemplar.cover%7D%7D
+ERR: 无法加载控制器:{{fileDomain + exemplar.cover}}
+
+[ 2019-02-02T14:39:40+08:00 ] 127.0.0.1 /m/scene/tpl/scene/recommendTag/list?time=1549089580040
+ERR: 无法加载控制器:M
+
+[ 2019-02-02T14:39:40+08:00 ] 127.0.0.1 /%7B%7Bavatar%7D%7D
+ERR: 无法加载控制器:{{avatar}}
+
+[ 2019-02-02T14:39:40+08:00 ] 127.0.0.1 /%7B%7BfileDomain%20+%20exemplar.cover%7D%7D
+ERR: 无法加载控制器:{{fileDomain + exemplar.cover}}
+
+[ 2019-02-02T14:42:41+08:00 ] 127.0.0.1 /assets/images/1tu.png
+ERR: 无法加载控制器:Assets
+
+[ 2019-02-02T14:43:38+08:00 ] 127.0.0.1 /index.php?c=ad&a=friendlinks?pageCode=index
+ERR: 非法操作:friendlinks?pageCode=index
+
+[ 2019-02-02T14:45:25+08:00 ] 127.0.0.1 /m/scene/social/share/status?id=8831300
+ERR: 无法加载控制器:M
+
+[ 2019-02-02T14:45:29+08:00 ] 127.0.0.1 /r.js?pid=3&v=1
+ERR: 无法加载控制器:R.js
+
+[ 2019-02-02T14:45:29+08:00 ] 127.0.0.1 /d.js?pid=2&v=1
+ERR: 无法加载控制器:D.js
+
+[ 2019-02-02T14:47:04+08:00 ] 127.0.0.1 /d.js?pid=2&v=1
+ERR: 无法加载控制器:D.js
+
+[ 2019-02-02T14:47:04+08:00 ] 127.0.0.1 /r.js?pid=3&v=1
+ERR: 无法加载控制器:R.js
+
+[ 2019-02-02T14:47:08+08:00 ] 127.0.0.1 /r.js?pid=3&v=1
+ERR: 无法加载控制器:R.js
+
+[ 2019-02-02T14:47:08+08:00 ] 127.0.0.1 /d.js?pid=2&v=1
+ERR: 无法加载控制器:D.js
+
+[ 2019-02-02T14:47:13+08:00 ] 127.0.0.1 /r.js?pid=3&v=1
+ERR: 无法加载控制器:R.js
+
+[ 2019-02-02T14:47:13+08:00 ] 127.0.0.1 /d.js?pid=2&v=1
+ERR: 无法加载控制器:D.js
+
+[ 2019-02-02T14:47:17+08:00 ] 127.0.0.1 /d.js?pid=2&v=1
+ERR: 无法加载控制器:D.js
+
+[ 2019-02-02T14:47:17+08:00 ] 127.0.0.1 /r.js?pid=3&v=1
+ERR: 无法加载控制器:R.js
+
+[ 2019-02-02T14:47:23+08:00 ] 127.0.0.1 /r.js?pid=3&v=1
+ERR: 无法加载控制器:R.js
+
+[ 2019-02-02T14:47:23+08:00 ] 127.0.0.1 /d.js?pid=2&v=1
+ERR: 无法加载控制器:D.js
+

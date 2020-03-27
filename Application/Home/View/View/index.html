@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8" />
+    <meta name="baidu-site-verification" content="2MKKT6mbuL" />
+    	<title>{$confinfo2[title]}</title>
+    <meta name="keywords" content="移动场景应用自营销管家,移动场景自营销管家,移动场景自营销工具,活动自营销管家,场景展示,免费的报名页,收集潜在客户,二次营销,轻CRM,提高移动场景营销效果" />
+    <meta id="metaDescription" name="description" content="{$confinfo2[title]|stripslashes}" />
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <meta name="viewport" id="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  	<link rel="stylesheet" href="/view/css/eqShow-2.1.5.3.css?v=<php>$version = './Application/Common/Conf/ver.php'; $ver = include($version); $ver = $ver['ver'];$ver = substr($ver,-4);echo $ver;</php>"/>
+    <script> var  your_demain='<php>if(strpos("http://",C("site_url"))!==false)echo "http://"; echo rtrim(C("site_url"),"/")</php>';
+   var  your_webname='<php>echo C("site_name")</php>';
+   var  logo_url='<php>echo C("site_name")</php>';
+     var  lastpagelink='<php>echo C("lastpagelink")</php>';
+	 var lastpagetext_color='<php>echo C("lastpagetext_color")</php>';
+    var  lastpagetext='<php>echo C("lastpagetext")</php>';
+	var jubao_link='<php>echo C("jubao_link")</php>';
+   </script>
+     <link rel="stylesheet" href="/Public/css/my52.css"/>
+     <link rel="stylesheet" href="/assets/v2/css/loaders.css">
+<style>
+        .noscroll,
+        .noscroll body {
+            height: 100%;
+            overflow: hidden;
+        }
+        .noscroll body {
+            position: relative;
+        }
+        .nopayed{
+            position: fixed;
+            background-color: #e1e7e4;
+            left: 0;
+            right: 0;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #0cb46a;
+        }
+        .nopayed a{
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .return_myworks{
+            position: fixed;
+            left: 130px;
+            top: 152px;
+        }
+        .return_myworks a{
+            display: block;
+            width: 158px;
+            height: 45px;
+            line-height: 45px;
+            background-color: rgba(0,0,0,0.5);
+            color: #fff!important;
+            font-size: 15px;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+        .return_logo{
+            position: fixed;
+            left: 130px;
+            top: 66px;
+        }
+        #warp {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #warp #content{
+            height: 100%;
+            overflow-y: auto;
+        }
+        .kpicon{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            display: block;
+            position: relative;
+
+        }
+        .kpicon::before{
+            background-repeat: no-repeat;
+            background-size:250% 250%;
+            background-position: center center;
+            filter: blur(20px);
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+            content: '';
+            background-image: url('<php>echo C("lastpagelink")</php>/Uploads/<php>if($sceneinfo[loadinglogo]):</php>{$sceneinfo[loadinglogo]}<php>else:</php>{$confinfo2[imgsrc]} <php>endif;</php>');"></div>
+        }
+        .kpicon_loaders{
+            position: absolute;
+            z-index: 20;
+            width: 200px;
+            height: 200px;
+            left: 50%;
+            top: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+            -ms-flex-pack: center;
+            -ms-flex-align: center;
+            -webkit-box-pack:center;
+            -webkit-justify-content:center;
+            -moz-box-pack:center;
+            justify-content:center;
+            -webkit-box-align:center;
+            -webkit-align-items:center;
+            -moz-box-align:center;
+            align-items:center;
+            box-sizing: border-box;
+            display: flex;
+
+        }
+    </style>
+
+</head>
+<body>
+<div id="warp">
+<div id="content">
+    <div id="ppitest" style="width:1in;visible:hidden;padding:0px"></div>
+<div class="p-index main phoneBox" id="con" style="display: none;">
+    <div class="top"></div>
+    <div class="phone_menubar"></div>
+    <div class="scene_title_baner" style="display: none">
+        <div class="scene_title">{$confinfo2[title]}</div>
+    </div>
+    <div class="nr" id="nr">
+        <div id="audio_btn" class="off">
+            <div id="yinfu"></div>
+            <audio loop src="" id="media" autoplay="" preload></audio>
+        </div>
+                <div id="loading" class="loading">
+            <div class="loadbox">
+
+                <!--<div class="loadlogo" style="background-image: url('/Uploads/syspic/scene/o_1cn94q5nk1plj1mbgi0qm5310ko23.jpg ');"></div>-->
+                <div class="loadlogo" style="background-image: url('/assets/v2/images/loading.jpg');"></div>
+                <div class="loadbg" style="background-image: url('/Public/css/images/loading.png')"></div>
+            </div>
+        </div>
+        <php>if($sceneinfo['accesscode']):</php>
+         <div id="verifyCode" class="verifyCode">
+            <div class="container">
+                <div class="scene-cover">
+                    <img class="cover-img" src="/Uploads/{$confinfo2[imgsrc]}" />
+                </div>
+                <div class="scene-name">{$confinfo2[title]}</div>              
+        
+                <div class="confirm-password">
+	                <label class="verify-label" for="password">请输入访问密码</label>
+	                <div class="verify-tips" id="verifyTip">
+						<ul class="password-indicator">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="password-numbers">
+						<span>1</span>
+						<span>2</span>
+						<span>3</span>
+						<span>4</span>
+						<span>5</span>
+						<span>6</span>
+						<span>7</span>
+						<span>8</span>
+						<span>9</span>
+						<span>0</span>
+					</div>
+					<div class="password-operation">
+						<span class="btn-clear" id="btnClear">清空</span>
+						<span class="btn-cancel" id="btnCancel">取消</span>
+					</div>
+                </div>
+            </div>
+        </div>
+        <php>endif;</php>
+    </div>
+    <div class="bottom"></div>
+</div>
+
+</body>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+
+    <script src="/Public/css/waiwan/jquery.min.js"></script>
+<script >
+ (function (window, $) {
+   window.PREFIX_URL = "http://"+window.location.host+"/";
+    window.PREFIX_S1_URL =  "http://"+window.location.host+"/";//"/json/";
+    window.PREFIX_S2_URL ="http://"+window.location.host+"/index.php";
+	window.PREFIX_S6_URL ="http://"+window.location.host+"/index.php";
+    window.PREFIX_HOST = "http://"+window.location.host+"/index.php";
+    window.PREFIX_HOST1 = "http://"+window.location.host+"/index.php";
+	window.PREFIX_SHOW_HOST = "http://"+window.location.host+"/index.php";
+	window.TRACK_HOST = "http://"+window.location.host+"/";
+    window.PREFIX_FILE_HOST = "http://"+window.location.host+"/Uploads/";
+	window.PREFIX_COMPANY_HOST_ARRAY = ["http://"+window.location.host, "http://"+window.location.host];
+	window.OLD_FILE_HOST="http://"+window.location.host+"/index.php";
+    window.CLIENT_CDN ="http://"+window.location.host+"/"; 
+   window.clientWidth = document.documentElement.clientWidth;
+    window.clientHeight = document.documentElement.clientHeight;    
+	window.PREFIX_HOST_ARRAY = [
+			"http://"+window.location.host,
+			"http://"+window.location.host,
+			"http://"+window.location.host,
+			"http://"+window.location.host
+		];
+       
+})(window, jQuery)
+</script>
+ <script type="text/javascript" src="/view/eqShow-preview-2.1.5.3.js?v=<php>$version = './Application/Common/Conf/ver.php'; $ver = include($version); $ver = $ver['ver'];$ver = substr($ver,-4);echo $ver;</php>"></script>
+
+   
+<script>
+ 
+	var scene = {id:{$confinfo2[workid]},code:"{$sceneinfo['scenecode_varchar']}",name:"{$sceneinfo['scenename_varchar']}",bgAudio:{"url":"{$sceneinfo['musicurl_varchar']}","name":"","id":202382032},pageMode:{$sceneinfo['movietype_int']},cover:"{$sceneinfo[cover]}",property:{$sceneinfo[property]}};
+	   <php>if($sceneinfo['accesscode']):</php>
+      eqShow.bootstrapWithPassword(); 
+	   <php>else:</php>
+	 eqShow.bootstrap();
+	   <php>endif;</php>
+	   
+	   (function () {
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobi/i.test(navigator.userAgent) ||
+                    window.innerWidth < 500;
+        }
+
+        function setScale() {
+            if (window.top !== window) {
+                return;
+            }
+            var pageScale = 1;
+
+            var width = document.documentElement.clientWidth || 320;
+            var height = document.documentElement.clientHeight || 486;
+
+
+            if (width / height >= 320 / 486) {
+                pageScale = height / 486;
+            } else {
+                pageScale = width / 320;
+            }
+             console.log('screen.width', width, 'screen.height', height, 'setScale', pageScale);
+            // meta
+            var content = 'width=320, initial-scale=' + pageScale + ', maximum-scale=' + pageScale + ', user-scalable=no';
+            document.getElementById('viewport').setAttribute('content', content);
+        }
+        
+        if (isMobile()) {
+            setScale();
+        }
+
+    })();
+	
+</script>
+ <script>
+          wx.config({
+			  debug: {$confinfo2[sdkdebug]},
+			  appId: '{$confinfo[appId]}',
+			  timestamp: "{$confinfo[timestamp]}",
+			  nonceStr: '{$confinfo[nonceStr]}',
+			  signature: '{$confinfo[signature]}',
+			  jsApiList: [
+				'onMenuShareTimeline',
+				'onMenuShareAppMessage'
+			  ]
+		  });
+          wx.ready(function () {
+		  
+			  var shareData64 = {
+				title: '{$confinfo2[title]}',
+				desc: '{$confinfo2[desc]}',
+				link: PREFIX_URL+'{$confinfo2[url]}',
+				imgUrl:  PREFIX_FILE_HOST  +'{$confinfo2[imgsrc]}'
+			  };
+			  wx.onMenuShareAppMessage(shareData64);
+			  wx.onMenuShareTimeline(shareData64);
+			  $("#media").get(0).play();
+          });
+		  
+		  
+		wx.error(function (res) {
+			//alert(res.errMsg);
+		});
+        </script>
+		{$confinfo2[othercode]}
+<script>
+    $.smartScroll = function(container, selectorScrollable) {
+            // 如果没有滚动容器选择器，或者已经绑定了滚动时间，忽略
+            if (!selectorScrollable || container.data('isBindScroll')) {
+                return;
+            }
+
+            // 是否是搓浏览器
+            // 自己在这里添加判断和筛选
+            var isSBBrowser;
+
+            var data = {
+                posY: 0,
+                maxscroll: 0
+            };
+
+            // 事件处理
+            container.on({
+                touchstart: function (event) {
+                    var events = event.touches ? event.touches[0] : event;
+
+                    // 先求得是不是滚动元素或者滚动元素的子元素
+                    var elTarget = $(event.target);
+
+                    if (!elTarget.length) {
+                        return;
+                    }
+
+                    var elScroll;
+
+                    // 获取标记的滚动元素，自身或子元素皆可
+                    if (elTarget.is(selectorScrollable)) {
+                        elScroll = elTarget;
+                    } else if ((elScroll = elTarget.parents(selectorScrollable)).length == 0) {
+                        elScroll = null;
+                    }
+
+                    if (!elScroll) {
+                        return;
+                    }
+
+                    // 当前滚动元素标记
+                    data.elScroll = elScroll;
+
+                    // 垂直位置标记
+                    data.posY = events.pageY;
+                    data.scrollY = elScroll.scrollTop();
+                    // 是否可以滚动
+                    data.maxscroll = elScroll[0].scrollHeight - elScroll[0].clientHeight;
+                },
+                touchmove: function (event) {
+                    // 如果不足于滚动，则禁止触发整个窗体元素的滚动
+                    if (data.maxscroll <= 0 || isSBBrowser) {
+                        // 禁止滚动
+                        event.preventDefault();
+                    }
+                    // 滚动元素
+                    var elScroll = data.elScroll;
+                    // 当前的滚动高度
+                    var scrollTop = elScroll.scrollTop();
+
+                    // 现在移动的垂直位置，用来判断是往上移动还是往下
+                    var events = event.touches ? event.touches[0] : event;
+                    // 移动距离
+                    var distanceY = events.pageY - data.posY;
+
+                    if (isSBBrowser) {
+                        elScroll.scrollTop(data.scrollY - distanceY);
+                        elScroll.trigger('scroll');
+                        return;
+                    }
+
+                    // 上下边缘检测
+                    if (distanceY > 0 && scrollTop == 0) {
+                        // 往上滑，并且到头
+                        // 禁止滚动的默认行为
+                        event.preventDefault();
+                        return;
+                    }
+
+                    // 下边缘检测
+                    if (distanceY < 0 && (scrollTop + 1 >= data.maxscroll)) {
+                        // 往下滑，并且到头
+                        // 禁止滚动的默认行为
+                        event.preventDefault();
+                        return;
+                    }
+                },
+                touchend: function () {
+                    data.maxscroll = 0;
+                }
+            });
+
+            // 防止多次重复绑定
+            container.data('isBindScroll', true);
+        };
+
+        $.smartScroll($('#warp'), '#content');
+   
+         <php> echo base64_decode(C('countCode'));</php>
+</script>
+</html>
